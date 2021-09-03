@@ -1,0 +1,14 @@
+package stepDefinition;
+
+import cucumber.api.java.Before;
+
+public class Hooks {
+	
+	@Before("@RegTest")
+
+	public void beforevalidation()
+	{
+		System.out.println("Mobile before Hook");
+	}
+
+}

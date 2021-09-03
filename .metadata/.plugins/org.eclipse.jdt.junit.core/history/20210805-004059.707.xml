@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="12.526">
+    <testsuite name="Feature: Buy Products" time="12.525">
+      <testcase name="Add backPack to Cart and dont Checkout" classname="Buy Products" time="12.525">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinition.StepDefinition.user_is_on_saucedemo_home_page(StepDefinition.java:28)&#13;
+	at ✽.User is on SauceDemo home Page(file:src/test/java/features/BuyProducts.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

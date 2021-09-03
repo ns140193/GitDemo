@@ -1,0 +1,20 @@
+package stepDefinition;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class Hooks {
+	
+	@Before("@RegTest and @SmokeTest")
+
+	public void beforevalidation()
+	{
+		System.out.println("Mobile before Hook");
+	}
+	@After("@RegTest and @SmokeTest")
+	public void aftervalidation()
+	{
+		System.out.println("After Hook");
+	}
+
+}

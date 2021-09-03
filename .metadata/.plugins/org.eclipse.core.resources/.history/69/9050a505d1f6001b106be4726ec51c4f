@@ -1,0 +1,12 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+
+public class AddtoCart {
+	WebDriver driver;
+
+public	AddtoCart(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+}

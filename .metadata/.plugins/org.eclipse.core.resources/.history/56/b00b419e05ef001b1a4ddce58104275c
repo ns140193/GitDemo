@@ -1,0 +1,19 @@
+Feature: Sauce Labs Application Login
+  
+
+	 
+		Scenario: Home Page Default Login and add Backpack
+    Given User is on SauceDemo home Page
+    When User login into Application with "standard_user" and "secret_sauce"
+    Then Products Home Page is displayed
+    And User is able to add "Sauce Labs Backpack" to Cart
+    And Logsout
+
+   Scenario: Home Page Default Login and Bike Light
+    Given User is on SauceDemo home Page
+    When User login into Application with "problem_user" and "secret_sauce"
+    Then Products Home Page is displayed
+    And User is able to add "Sauce Labs Bike Light" to Cart
+    And User Signs up using below details
+    | TestF | TestL | 111111 |
+    And Logsout

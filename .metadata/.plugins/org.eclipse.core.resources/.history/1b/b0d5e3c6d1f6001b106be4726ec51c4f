@@ -1,0 +1,21 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AddtoCart {
+	WebDriver driver;
+
+public	AddtoCart(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+By Backpack=By.id("//a[@id='logout_sidebar_link']");
+By logout=By.xpath("//a[@id='logout_sidebar_link']");
+
+public WebElement menubutton()
+{
+return	driver.findElement(Backpack);
+}
+}

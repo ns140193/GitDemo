@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="14.439">
+    <testsuite name="Feature: Buy Products" time="14.439">
+      <testcase name="Add Bike Light to Cart and Checkout" classname="Buy Products" time="7.332">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "Products Home Page is displayed is "false"" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="Add Bike Light to Cart and Checkout" classname="Buy Products" time="3.627">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "Products Home Page is displayed is "false"" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+      <testcase name="Add Bike Light to Cart and Checkout" classname="Buy Products" time="3.476">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "Products Home Page is displayed is "false"" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

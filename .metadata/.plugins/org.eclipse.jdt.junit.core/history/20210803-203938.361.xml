@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="4.14">
+    <testsuite name="Feature: Buy Products" time="4.14">
+      <testcase name="Add backPack to Cart and dont Checkout" classname="Buy Products" time="4.14">
+        <skipped>cucumber.api.PendingException: TODO: implement me&#13;
+	at stepDefinition.StepDefinition.driver_is_configured(StepDefinition.java:29)&#13;
+	at ✽.Driver is Configured(file:src/test/java/features/BuyProducts.feature:3)&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

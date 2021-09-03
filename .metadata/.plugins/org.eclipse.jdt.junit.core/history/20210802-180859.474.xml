@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="30.408">
+    <testsuite name="Feature: Buy Products" time="22.049">
+      <testcase name="Add backPack to Cart and dont Checkout" classname="Buy Products" time="22.049"/>
+    </testsuite>
+    <testsuite name="Feature: Sauce Labs Application Login" time="8.359">
+      <testcase name="SwagLabs Login : Negative" classname="Sauce Labs Application Login" time="8.359"/>
+    </testsuite>
+  </testsuite>
+</testrun>

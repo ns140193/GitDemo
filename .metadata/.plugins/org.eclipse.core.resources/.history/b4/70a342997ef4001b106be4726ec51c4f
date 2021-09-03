@@ -1,0 +1,108 @@
+package stepDefinition;
+
+import java.awt.List;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.By.ById;
+import org.openqa.selenium.By.ByXPath;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import GroupID.Base;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+import gherkin.ast.DataTable;
+
+public class StepDefinition {
+	public WebDriver driver;
+	
+	@Given("^User is on SauceDemo home Page$")
+	    public void user_is_on_saucedemo_home_page() throws Throwable {
+		driver=Base.getDriver();
+		 driver.manage().window().maximize();
+	    
+		 String ExpectedTitle="Swag Labs";
+	    	String ActualTitle=driver.getTitle();
+	    	if(ActualTitle.contentEquals(ExpectedTitle))
+	    	{
+	    		System.out.println("Actual Title of the Page is: "+ ActualTitle);
+	    	}
+	    	else
+	    		System.out.println("Expected and Actual Titles are different : Test Case Failed!!");
+
+	   
+	      
+	      
+	    }
+	 @When("^User login into Application with \"([^\"]*)\" and \"([^\"]*)\"$")
+	    public void user_login_into_application_with_something_and_something(String strArg1, String strArg2) throws Throwable {
+		 driver.findElement(By.xpath("//input[@id=\"user-name\"]")).sendKeys(strArg1);
+		   driver.findElement(By.xpath("//input[@id=\"password\"]")).sendKeys(strArg2);
+		   driver.findElement(By.xpath("//input[@id=\"login-button\"]")).click();
+		      System.out.println("Logging in using "+strArg1+ " & "+strArg2);
+		  	 
+	    }
+
+	 @Then("^Products Home Page is displayed is \"([^\"]*)\"$")
+	    public void products_home_page_is_displayed_is_something(String strArg1)  {
+	    		    	Boolean S =  driver.findElement(By.xpath("//*[@class=\"app_logo\"]")).isDisplayed();
+		      if (S)
+		    	 System.out.println("Successful Login");
+		      
+	    }
+
+	    @And("User is able to add {string} to Cart")
+	    public void user_is_able_to_add_to_Cart(String string) throws InterruptedException  {
+	    	if (string.contentEquals("Sauce Labs Backpack"))
+	    	{
+	    	
+	    	 driver.findElement(By.name("add-to-cart-sauce-labs-backpack")).click();
+	    	 System.out.println(" Backpack added to Cart");
+	    	 
+	       	}
+	    	
+	    	else
+	    	{
+	    		driver.findElement(By.name("add-to-cart-sauce-labs-bike-light")).click();
+	    		System.out.println(" Bike Light added to Cart");
+	    		 
+	    		 
+	       	}
+	    	    	     
+	    }
+	    @And("^Logsout$")
+	    public void logsout() throws InterruptedException  {
+	    	
+	    	
+	    	driver.findElement(By.id("react-burger-menu-btn")).click();
+	    	
+	    	 Thread.sleep(5000);
+	    	 driver.findElement (By.xpath("//a[@id='logout_sidebar_link']")).click();
+	    	 	System.out.println("Logged out");
+	    	 
+	        
+	    }
+
+	        @And("^User Signs up using (.+) and (.+) and (.+)$")
+	        public void user_signs_up_using_and_and(String firstname, String lastname, String postalcode) throws Throwable {
+	        	driver.findElement(By.xpath("//a[@class='shopping_cart_link']")).click();
+	        	Thread.sleep(5000);
+	        	driver.findElement(By.xpath("//button[@id='checkout']")).click();
+	        	Thread.sleep(5000);
+	        	driver.findElement(By.xpath("//input[@id='first-name']")).sendKeys(firstname);
+	        	driver.findElement(By.id("last-name")).click();
+	        	driver.findElement(By.id("last-name")).sendKeys(lastname);
+	        	Thread.sleep(5000);
+	        	driver.findElement(By.xpath("//input[@id='postal-code']")).sendKeys(postalcode);
+	        	Thread.sleep(5000);
+	        	driver.findElement(By.xpath("//input[@id='continue']")).click();
+	        	Thread.sleep(5000);
+	        	driver.findElement(By.xpath("//input[@id='finish']")).click();
+	       
+	        }
+
+}

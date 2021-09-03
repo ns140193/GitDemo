@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="20.877">
+    <testsuite name="Feature: Buy Products" time="12.173">
+      <testcase name="Add backPack to Cart and dont Checkout" classname="Buy Products" time="12.173">
+        <skipped>cucumber.runtime.junit.UndefinedThrowable: The step "Products Home Page is displayed" is undefined&#13;
+&#13;
+</skipped>
+      </testcase>
+    </testsuite>
+    <testsuite name="Feature: Sauce Labs Application Login" time="8.702">
+      <testcase name="SwagLabs Login : Negative" classname="Sauce Labs Application Login" time="8.702"/>
+    </testsuite>
+  </testsuite>
+</testrun>

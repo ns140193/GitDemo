@@ -1,0 +1,25 @@
+package stepDefinition;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class Hooks extends StepDefinition {
+	
+	@Before("@RegTest and @SmokeTest")
+
+	public void beforevalidation()
+	{
+		System.out.println("Mobile before Hook");
+		  System.setProperty("webdriver.chrome.driver","C:\\Users\\494770\\SetUp\\chromedriver_win32\\chromedriver.exe");
+	       System.out.println("Finding Chrome Driver....");
+	       driver = new ChromeDriver();
+	}
+	@After("@RegTest and @SmokeTest")
+	public void aftervalidation()
+	{
+		System.out.println("After Hook");
+	}
+
+}

@@ -1,0 +1,28 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LoginPage {
+public WebDriver driver;
+
+LoginPage()
+{
+	this.driver=driver;
+}
+	By loginID=By.xpath("//input[@id=\"user-name\"]");
+	By Password=By.xpath("//input[@id=\"user-name\"]");
+			
+			public WebElement getLoginID()
+			{
+				return driver.findElement(loginID);
+			}
+			
+			public WebElement Password()
+			{
+				return driver.findElement(Password);
+			}
+
+	
+}

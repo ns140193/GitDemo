@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="ArtifactID" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="27.184">
+    <testsuite name="Feature: Buy Products" time="27.184">
+      <testcase name="Add backPack to Cart and dont Checkout" classname="Buy Products" time="27.184">
+        <error>java.lang.NullPointerException&#13;
+	at stepDefinition.StepDefinition.user_login_into_application_with_something_and_something(StepDefinition.java:46)&#13;
+	at ✽.User login into Application with "standard_user" and "secret_sauce"(file:src/test/java/features/BuyProducts.feature:5)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

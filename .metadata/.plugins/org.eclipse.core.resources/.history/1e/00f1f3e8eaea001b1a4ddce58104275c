@@ -1,0 +1,15 @@
+Feature: Sauce Labs Application Login
+  
+
+	 
+		Scenario: Home Page Default Login
+    Given User is on SauceDemo home Page
+    When User login into Application with "standard_user" and "secret_sauce"
+    Then Products Home Page is displayed
+    And User is able to add Sauce Lab Backpack to Cart
+
+   Scenario: Home Page Default Login
+    Given User is on SauceDemo home Page
+    When User login into Application with "locked_out_user" and "secret_sauce"
+    Then Products Home Page is displayed
+    And User is able to add Sauce Lab Backpack to Cart
